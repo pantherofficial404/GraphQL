@@ -2,16 +2,23 @@
   "name": "graph",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index",
+    "start:dev": "nodemon src/index"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "keywords": [],
   "dependencies": {
+    "app-module-path": "^2.2.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
     "mongoose": "^5.7.1"
   }
 }
