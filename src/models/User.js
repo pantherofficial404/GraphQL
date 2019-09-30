@@ -12,9 +12,9 @@ const userSchema = new Schema(
     password: {
       type: mongoose.Schema.Types.String,
       require: true
-    }
+    },
   },
   SchemaOptions
-);
+)
 
 module.exports = mongoose.model('User', userSchema);
