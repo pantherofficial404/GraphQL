@@ -7,6 +7,7 @@ const query = `type query {
 
 const mutation = `type mutation {
   signup(ISignup:ISignup):TUser!
+  login(ILogin:ILogin):TUser!
 }`
 
 const router = `schema {

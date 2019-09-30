@@ -1,6 +1,8 @@
 const TUser = `type TUser {
   username:String!
   _id:String!
+  token:String
+  expiresIn:String
 }`;
 
 const ILogin = `input ILogin {
