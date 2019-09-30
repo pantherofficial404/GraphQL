@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use('/api/1.0', graphQLHttp({
   schema: schema,
   rootValue: rootController,
-  graphiql: true,
+  graphiql: config.get('graph'),
 }))
 
 mongoose.connect(config.get('db'), { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
